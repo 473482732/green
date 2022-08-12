@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- 引入animate.css 动画效果 -->
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <!-- 公共样式 -->
+    <link rel="stylesheet/less" href="./assets/css/common.less" />
+
+    <!-- 首页样式 -->
+	<link rel="stylesheet/less" href="./assets/css/shop.less" />
+</head>
+<body>
+    <!-- 头部 -->
+<header id="header" class="header">
+    <div class="sace wow bounceIn">
+      <div class="find">
+        <i class="icon icon-search"></i>
+        <input type="text" placeholder="搜索商品名称">
+      </div>
+    </div>
+</header>
+
+<div class="shop">
+    <div class="quanxuan wow bounceIn">
+        <div class="s1">
+            <input type="checkbox" name="" id="allCheckBox">&nbsp;&nbsp;全选
+        </div>
+        <div class="s2">
+            合计：￥<span id="totalMoney">0</span>
+        </div>   
+    </div>
+
+    <ul class="ul">
+        <li class="li wow fadeInUp" data-wow-delay="100ms">
+            <div class="s3">
+                <input type="checkbox" name="" id="allCheckBox">
+            </div>
+            <div class="s4">
+                <img src="./assets/images/sp1.jpg" alt="">
+            </div>
+            <div class="s5">
+                <div class="title">各种水果搭配果蓝实惠贴切5000g</div>
+                <div class="price">￥25.31</div>
+            </div>
+            <div class="s6">
+                <input class="jian" type="button" value="-">
+                <input class="count" type="button" value="1">
+                <input class="jia" type="button" value="+">
+            </div>
+            <div class="s7">
+                <input type="button" value="删除" class="sc">
+            </div>
+        </li>
+        <li class="li wow fadeInUp" data-wow-delay="200ms">
+            <div class="s3">
+                <input type="checkbox" name="" id="allCheckBox">
+            </div>
+            <div class="s4">
+                <img src="./assets/images/sp2.jpg" alt="">
+            </div>
+            <div class="s5">
+                <div class="title">100%天然生菜白菜2198g</div>
+                <div class="price">￥15.81</div>
+            </div>
+            <div class="s6">
+                <input class="jian" type="button" value="-">
+                <input class="count" type="button" value="1">
+                <input class="jia" type="button" value="+">
+            </div>
+            <div class="s7">
+                <input type="button" value="删除" class="sc">
+            </div>
+        </li>
+        <li class="li wow fadeInUp" data-wow-delay="300ms">
+            <div class="s3">
+                <input type="checkbox" name="" id="allCheckBox">
+            </div>
+            <div class="s4">
+                <img src="./assets/images/sp3.jpg" alt="">
+            </div>
+            <div class="s5">
+                <div class="title">猪肉铺特惠促销装1998g</div>
+                <div class="price">￥34.09</div>
+            </div>
+            <div class="s6">
+                <input class="jian" type="button" value="-">
+                <input class="count" type="button" value="1">
+                <input class="jia" type="button" value="+">
+            </div>
+            <div class="s7">
+                <input type="button" value="删除" class="sc">
+            </div>
+        </li>
+        <li class="li wow fadeInUp" data-wow-delay="400ms">
+            <div class="s3">
+                <input type="checkbox" name="" id="allCheckBox">
+            </div>
+            <div class="s4">
+                <img src="./assets/images/sp4.jpg" alt="">
+            </div>
+            <div class="s5">
+                <div class="title">刘家峡草莓</div>
+                <div class="price">￥35.72</div>
+            </div>
+            <div class="s6">
+                <input class="jian" type="button" value="-">
+                <input class="count" type="button" value="1">
+                <input class="jia" type="button" value="+">
+            </div>
+            <div class="s7">
+                <input type="button" value="删除" class="sc">
+            </div>
+        </li>
+        <li class="li wow fadeInUp" data-wow-delay="500ms">
+            <div class="s3">
+                <input type="checkbox" name="" id="allCheckBox">
+            </div>
+            <div class="s4">
+                <img src="./assets/images/sp5.jpg" alt="">
+            </div>
+            <div class="s5">
+                <div class="title">王阿婆特色茶叶蛋包邮2000g</div>
+                <div class="price">￥23.98</div>
+            </div>
+            <div class="s6">
+                <input class="jian" type="button" value="-">
+                <input class="count" type="button" value="1">
+                <input class="jia" type="button" value="+">
+            </div>
+            <div class="s7">
+                <input type="button" value="删除" class="sc">
+            </div>
+        </li>
+        <li class="li wow fadeInUp" data-wow-delay="600ms">
+            <div class="s3">
+                <input type="checkbox" name="" id="allCheckBox">
+            </div>
+            <div class="s4">
+                <img src="./assets/images/sp6.jpg" alt="">
+            </div>
+            <div class="s5">
+                <div class="title">无添加上等学生奶300g</div>
+                <div class="price">￥2.31</div>
+            </div>
+            <div class="s6">
+                <input class="jian" type="button" value="-">
+                <input class="count" type="button" value="1">
+                <input class="jia" type="button" value="+">
+            </div>
+            <div class="s7">
+                <input type="button" value="删除" class="sc">
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- 底部 -->
+<footer class="footer">
+    <a class="item wow fadeInUp" data-wow-delay="100ms" href="./index.html">
+        <span class="glyphicon glyphicon-home"></span>
+        <span>首页</span>
+    </a>
+    <a class="item wow fadeInUp" data-wow-delay="300ms" href="#">
+        <span class="glyphicon glyphicon-th-large"></span>
+        <span>分类</span>
+    </a>
+    <a class="item wow fadeInUp" data-wow-delay="500ms" href="./shop.html">
+        <span class="glyphicon glyphicon-shopping-cart" style="color: #009b4d;"></span>
+        <span>购物车</span>
+    </a>
+    <a class="item wow fadeInUp" data-wow-delay="700ms" href="#">
+        <span class="glyphicon glyphicon-calendar"></span>
+        <span>特色民宿</span>
+    </a>
+<a class="item wow fadeInUp" data-wow-delay="900ms" href="./mi.html">
+        <span class="glyphicon glyphicon-user"></span>
+        <span>我的</span>
+    </a>
+</footer>
+</body>
+</html>
+<!-- 引入jquery -->
+<script src="./assets/js/jquery.min.js"></script>
+
+<!-- 引入bootstrap js  -->
+<script src="./assets/js/bootstrap.min.js"></script>
+
+<!-- 引入less -->
+<script src="./assets/js/less.min.js"></script>
+
+<!-- 引入懒加载插件 -->
+<script src="./assets/js/wow.min.js"></script>
+
+<!-- 滚动视觉差插 -->
+<script src="./assets/js/parallax.min.js"></script>
+
+<!-- 制作懒加载效果 -->
+<script>
+  // 实例化懒加载动画效果
+  new WOW().init();
+
+</script>
